@@ -6,9 +6,11 @@ var FilmList = React.createClass({
     var filmNodes = this.props.data.map(function(film){
       return (
         <Film key = {film.id} >
-          <img src = "../resources/icon.png"/>
-          {film.title}
-          <a href = {film.link}>Showtimes</a>
+
+        <p><img src = "../resources/icon.png"/>
+        {film.title}</p>
+        <a href = {film.link}>Showtimes</a>
+
         </Film>
         );
     });
@@ -16,7 +18,7 @@ var FilmList = React.createClass({
     return(
       <div className = "film-list">
       <h5>UK Opening This Week</h5>
-        {filmNodes}
+      {filmNodes}
       </div>
       );
     

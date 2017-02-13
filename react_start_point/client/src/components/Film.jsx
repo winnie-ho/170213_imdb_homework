@@ -4,8 +4,7 @@ var Film = React.createClass({
   render: function(){
     return(
       <div className = "film">
-        <p> {this.props.title} </p>
-        <p> {this.props.children} </p>
+        {this.props.children}
       </div>
       );
   }
